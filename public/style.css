@@ -1,0 +1,312 @@
+ion-icon {
+    font-size: 20px;
+}
+
+body {
+font-size: 12px;
+font-weight: 400;
+font-family: 'Roboto', sans-serif;
+background-color: #E5E5E5;  
+}
+
+.menu-superior {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #DBDBDB;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.dentro-superior {
+    height: 54px;
+    width: 935px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.separador {
+    background-color: #DBDBDB;
+    width: 1px;
+    height: 22px;
+}
+
+.buscar {
+    width: 250px;
+}
+
+.buscar input {
+    width: 215px;
+    height: 28px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+
+.buscar input::placeholder {
+    text-align: center;
+}
+
+.icones-superior {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.principal {
+    width: 100%;
+    margin-top: 88px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stories-feed {
+    display: flex;
+    flex-direction: column;
+}
+
+.stories {
+    width: 614px;
+    height: 118px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow:hidden;
+    position: relative;
+}
+
+.individual {
+    width: 66px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    align-items: center;
+}
+
+.todos-stories {
+    display: flex;
+    width: 1000px;
+}
+
+.argola {
+    width: 66px;
+    height: 66px;
+    background-image: url("../img/stories_background\ 1\ \(3\).png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feed {
+    width: 614px;
+    height: 749px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    background-color: #FFFFFF;
+}
+
+.cima-feed {
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cima-feed-esquerdo {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pontinhos {
+    margin-right: 13px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.icones-baixo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.icones-baixo-esquerdo {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-baixo {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    background-color: #E5E5E5;  
+    width: 293px;
+    height: 486px;
+}
+
+.chevron-circle {
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 575px;
+    margin-top: 25px;
+}  
+
+.box {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.descricao-perfil {
+    margin-left: 20px;
+}
+
+.sugestoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.seguidos {
+    margin-top: 18px;
+    display: flex;
+}
+
+.fotinha {
+    width: 50px;
+}
+
+.seguidor-individual {
+    display: flex;
+}
+
+.meio {
+    margin-left: 11px;
+    line-height:  17px;
+} 
+
+.seguir {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.letras-pequenas {
+    margin-top: 30px;
+}
+
+.letras-pequenas p {
+    color: #C7C7C7;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.letras-menores {
+    margin-top: 20px;
+}
+
+.letras-menores p {
+    color: #C7C7C7;
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.tituloUm {
+   font-size: 14px;
+   color: #262626;
+   font-weight: 500;
+}
+
+.tituloDois {
+    font-size: 12px;
+    color: #8E8E8E;
+    font-weight: 400;
+}
+
+.seguir p {
+    font-weight: 500;
+    font-size: 12px;
+    color: #139EF2;
+}
+
+.descricao-perfil p {
+    margin-right: 10px;
+}
+
+.sugestao {
+    font-size: 12px;
+    font-weight: 500;
+    color: #8E8E8E;
+}
+
+.ver-tudo {
+    font-size: 12px;
+    font-weight: 500;
+    color: #262626;
+}
+
+.titulo {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+}
+
+.fotinha {
+    width: 613px;
+    height: 612px;
+}
+
+@media (max-width: 614px){
+    .sidebar {
+        display: none;
+    }
+}
+
