@@ -147,6 +147,7 @@ background-color: #E5E5E5;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-left: 5px;
 }
 
 .pontinhos {
@@ -174,11 +175,16 @@ p {
 }
 
 .texto-baixo {
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 15px;
+    margin-left: 8px;
     font-size: 14px;
     display: flex;
     align-items: center;
+}
+
+.texto-baixo img {
+    width: 20px;
+    height: 20px;
 }
 
 .sidebar {
@@ -308,6 +314,11 @@ p {
     width: 40px;
     height: 40px;
     border-radius: 20px;
+}
+
+.cima-feed-esquerdo img {
+    width: 35px;
+    height: 35px;
 }
 
 @media (max-width: 614px){

@@ -1,6 +1,6 @@
-import Stories from "./Stories"
-import Posts from "./Posts"
+import Post from "./Post"
 import Sidebar from "./Sidebar"
+import Story from "./Story"
 
 export default function Corpo () {
 
@@ -8,8 +8,8 @@ export default function Corpo () {
             <div class="principal">
                 <div class="container">
                     <div class="stories-feed">
-                        <Stories />
-                        <Posts />
+                        <Story />
+                        <Post />
                     </div>
                         <Sidebar />
                 </div>
