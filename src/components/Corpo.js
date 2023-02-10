@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar"
 
 export default function Corpo () {
 
-return (
+        return (
             <div class="principal">
                 <div class="container">
                     <div class="stories-feed">
