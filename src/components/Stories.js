@@ -1,7 +1,9 @@
 import Story from "./Story"
 
 
-export default function Stories() {
+const Stories = () => {
    
 
 }
+
+export default Stories

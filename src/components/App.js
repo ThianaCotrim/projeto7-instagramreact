@@ -1,11 +1,13 @@
 import NavBar from "./NavBar"
 import Corpo from "./Corpo"
 
-export default function App () {
+const App = () => {
     return (
-        <div>
+        <>
            <NavBar />
             <Corpo />
-        </div> 
+        </> 
     )
 }
+
+export default App

@@ -2,8 +2,7 @@ import Post from "./Post"
 import Sidebar from "./Sidebar"
 import Story from "./Story"
 
-export default function Corpo () {
-
+const Corpo = () => {
         return (
             <div class="principal">
                 <div class="container">
@@ -16,3 +15,4 @@ export default function Corpo () {
             </div>
 )
 }
+export default Corpo

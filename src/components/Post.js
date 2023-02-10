@@ -1,11 +1,10 @@
-export default function Post () {
-
+const Post = () => {
 
     const posts = [
 
-        { fotoPequena:"./img/meowed 2.png", nomePerfil:"meowed", fotoPrincipal:"./img/ae.jpg", fotoQuemCurtiu:"./img/respondeai 2.png", quemCurtiu:"respondeai", quantasCurtidas:"101.523"},
-        { fotoPequena:"./img/barked 1 (2).png", nomePerfil:"barked", fotoPrincipal:"./img/imagem.jpg", fotoQuemCurtiu:"./img/foto4.png", quemCurtiu:"adorable_animals", quantasCurtidas:"548.001 "},
-        { fotoPequena:"./img/nathanwpylestrangeplanet 1 (2).png", nomePerfil:"nathan", fotoPrincipal:"./img/rio.jpg", fotoQuemCurtiu:"./img/foto5.png", quemCurtiu:"razosparacreditar", quantasCurtidas:"12.702"}
+        { fotoPequena:"./img/meowed 2.png", nomePerfil:"meowed", fotoPrincipal:"./img/ae.jpg", fotoQuemCurtiu:"./img/respondeai 2.png", quemCurtiu:"respondeai", quantasCurtidas:"55"},
+        { fotoPequena:"./img/barked 1 (2).png", nomePerfil:"barked", fotoPrincipal:"./img/imagem.jpg", fotoQuemCurtiu:"./img/foto4.png", quemCurtiu:"adorable_animals", quantasCurtidas:"32"},
+        { fotoPequena:"./img/nathanwpylestrangeplanet 1 (2).png", nomePerfil:"nathan", fotoPrincipal:"./img/rio.jpg", fotoQuemCurtiu:"./img/foto5.png", quemCurtiu:"razosparacreditar", quantasCurtidas:"91"}
     ]
 
     return (
@@ -33,7 +32,7 @@ export default function Post () {
                 </div>
                 <div class="texto-baixo">
                     <img src={p.fotoQuemCurtiu} />
-                    &nbsp; Curtido por {p.quemCurtiu} e outras {p.quantasCurtidas} pessoas
+                    &nbsp; Curtido por <span>&nbsp;{p.quemCurtiu}</span>&nbsp;e outras&nbsp;<span>{p.quantasCurtidas}</span>&nbsp;pessoas
                 </div>
             </div>
         </div>
@@ -41,7 +40,4 @@ export default function Post () {
     )
 }
 
-
-function Feed () {
-    return 
-}
+export default Post

@@ -1,7 +1,7 @@
 import Usuario from "./Usuario"
 import Sugestao from "./Sugestao"
 
-export default function Sidebar() {
+const Sidebar = () => {
     return (
         <div class="sidebar">
             < Usuario />
@@ -17,3 +17,5 @@ export default function Sidebar() {
         </div>
     )
 }
+
+export default Sidebar

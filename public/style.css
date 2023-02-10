@@ -113,6 +113,7 @@ background-color: #E5E5E5;
 .todos-stories {
     display: flex;
     width: 1000px;
+    margin-left: 5px;
 }
 
 .argola {
@@ -158,6 +159,10 @@ p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 500;
+}
+
+span {
+    font-weight: bold;
 }
 
 .icones-baixo {

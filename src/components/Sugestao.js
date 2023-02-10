@@ -1,5 +1,4 @@
-export default function Sugestao(){
-
+const Sugestao = () => {
 
     const sugestoes = [
 
@@ -10,13 +9,10 @@ export default function Sugestao(){
         { imagem:"./img/animais.png", textoUm: "chisb.iradaderest.",textoDois:"Segue você" },
     ]
 
-
-
     return (
-            sugestoes.map((s) => (
-                <div class="seguidos">
+        sugestoes.map((s) => (
+            <div class="seguidos">
                 <div class="seguidor-individual">
-                  
                     <img src={s.imagem} />
                     <div class="meio">
                         <p class="tituloUm"> {s.textoUm} </p>
@@ -26,10 +22,10 @@ export default function Sugestao(){
                         <p> Seguir</p>
                     </div>
                 </div>
-        </div>
+            </div>
 
             ))
-       
     )
 } 
 
+export default Sugestao

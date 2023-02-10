@@ -1,4 +1,4 @@
-export default function Story () {
+const Story = () => {
 
     let story = [
 
@@ -28,15 +28,8 @@ export default function Story () {
         ))}
         <ion-icon class="chevron-circle" name="chevron-forward-circle"></ion-icon>
     </div>
-</div>
-
-        
-
-        
-
-       
-
-
-       
+</div> 
     )
 }
+
+export default Story

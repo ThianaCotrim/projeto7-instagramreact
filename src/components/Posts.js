@@ -1,7 +1,9 @@
 import Post from "./Post"
 
-export default function Posts() {
+const Posts = () => {
     
 }
+
+export default Posts
 
 

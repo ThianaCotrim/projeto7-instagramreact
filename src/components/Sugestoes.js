@@ -1,7 +1,8 @@
 import Sugestao from "./Sugestao"
 
-export default function Sugestoes() {
+const Sugestoes = () => {
 
     
 }
 
+export default Sugestoes

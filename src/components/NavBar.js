@@ -1,4 +1,4 @@
-export default function NavBar() {
+const NavBar = () => {
 
     return (
        <div class="menu-superior">
@@ -22,3 +22,5 @@ export default function NavBar() {
        </div>
     )
    }
+
+export default NavBar

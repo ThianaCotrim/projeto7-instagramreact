@@ -1,5 +1,5 @@
 
-export default function Usuario () {
+const Usuario = () => {
 
     let nomeDoUsuario = ""//prompt('Qual o seu nome?');
     let fotoDePerfil = "./img/user.png";
@@ -22,3 +22,4 @@ export default function Usuario () {
         </div>
     )
 }
+export default Usuario
