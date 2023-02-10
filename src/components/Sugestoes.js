@@ -1,78 +1,17 @@
+import Sugestao from "./Sugestao"
+
 export default function Sugestoes() {
-    console.log ()
+        
     return (
+        
         <div>
-            <div class="sugestoes">
-                <p class="sugestao"> Sugestões pra Você </p>
-                <p class="ver-tudo"> Ver tudo </p>
-            </div>
-
-            <div class="seguidos">
-                <div class="seguidor-individual">
-                    <img src="./img/foto1.png" />
-                    <div class="meio">
-                        <p class="tituloUm"> bad.vibes.memes </p>
-                        <p class="tituloDois"> Segue você </p>
-                    </div>
-                    <div class="seguir">
-                        <p> Seguir</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="seguidos">
-                <div class="seguidor-individual">
-                    <img src="./img/foto5.png" />
-                    <div class="meio">
-                        <p class="tituloUm"> razosparacreditar </p>
-                        <p class="tituloDois"> Novo no Instagram </p>
-                    </div>
-                    <div class="seguir">
-                        <p> Seguir</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="seguidos">
-                <div class="seguidor-individual">
-                    <img src="./img/foto4.png" />
-                    <div class="meio">
-                        <p class="tituloUm"> adorable_animals </p>
-                        <p class="tituloDois"> Segue você </p>
-                    </div>
-                    <div class="seguir">
-                        <p> Seguir</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="seguidos">
-                <div class="seguidor-individual">
-                    <img src="./img/chibirdart 1.png" />
-                    <div class="meio">
-                        <p class="tituloUm"> smalls_custecats </p>
-                        <p class="tituloDois"> Segue você </p>
-                    </div>
-                    <div class="seguir">
-                        <p> Seguir</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="seguidos">
-                <div class="seguidor-individual">
-                    <img src="./img/animais.png" />
-                    <div class="meio">
-                        <p class="tituloUm"> chisb.iradaderest. </p>
-                        <p class="tituloDois"> Segue você </p>
-                    </div>
-                    <div class="seguir">
-                        <p> Seguir</p>
-                    </div>
-                </div>
-            </div>
-
+            <Sugestao imagem="./img/foto1.png" textoUm="bad.vibes.memes" textoDois="Segue você"/>
+            <Sugestao imagem="./img/foto5.png" textoUm="razosparacreditar" textoDois="Novo no Instagram"/>
+            <Sugestao imagem="./img/foto4.png" textoUm="adorable_animals" textoDois="Segue você"/>
+            <Sugestao imagem="./img/chibirdart 1.png" textoUm="smalls_custecats" textoDois="Segue você"/>
+            <Sugestao imagem="./img/animais.png" textoUm="chisb.iradaderest." textoDois="Segue você"/>
         </div>
+        
     )
-
 }
+
