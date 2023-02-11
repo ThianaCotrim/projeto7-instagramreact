@@ -209,6 +209,10 @@ span {
     margin-top: 25px;
 }  
 
+.pencil-outline{
+    cursor: pointer;
+}
+
 .box {
     display: flex;
     align-items: center;
@@ -316,9 +320,9 @@ span {
 }
 
 .foto-perfil img {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
 }
 
 .cima-feed-esquerdo img {

@@ -1,24 +1,41 @@
+import { useState } from "react";
 
 const Usuario = () => {
 
-    let nomeDoUsuario = ""//prompt('Qual o seu nome?');
+    const [nomeDoUsuario, setnomeDoUsuario] = useState('')
+
+    const [novaFoto, setnovaFoto] = useState('')
+
     let fotoDePerfil = "./img/user.png";
 
-    let novaFoto = ""//prompt('Insira sua foto de perfil');
+ 
     
 
     let frase = !nomeDoUsuario ? "Usuário não identificado" : `Seja bem vindo(a), ${nomeDoUsuario}`;
     
 
+    const inserirNome = () => {
+        const novoNomeDoUsuario = prompt('Qual o seu nome?')
+        setnomeDoUsuario(novoNomeDoUsuario)
+        
+    }
+
+    const inserirFoto = () => {
+        const fotoAtualizada = prompt('Insira sua foto de perfil')
+        setnovaFoto(fotoAtualizada)
+        
+    }
+
+
     return (
         <div class="box">
             <div class="foto-perfil">
-                <img src={!novaFoto ? "./img/user.png" : novaFoto} />
+                <img onClick={inserirFoto} src={!novaFoto ? "./img/user.png" : novaFoto} class="pencil-outline"/>
             </div>
                 <div class="descricao-perfil">
                     <p class="titulo">{frase}</p>
                 </div>
-            <ion-icon name="pencil-outline"></ion-icon>
+            <ion-icon class="pencil-outline" onClick={inserirNome} name="pencil-outline"></ion-icon>
         </div>
     )
 }
