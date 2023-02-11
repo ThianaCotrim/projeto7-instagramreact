@@ -6,10 +6,6 @@ const Usuario = () => {
 
     const [novaFoto, setnovaFoto] = useState('')
 
-    let fotoDePerfil = "./img/user.png";
-
- 
-    
 
     let frase = !nomeDoUsuario ? "Usuário não identificado" : `Seja bem vindo(a), ${nomeDoUsuario}`;
     

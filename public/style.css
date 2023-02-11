@@ -330,6 +330,19 @@ span {
     height: 35px;
 }
 
+.branco {
+    background-color: white;
+}
+
+.preto  {
+    background-color: black;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+
 @media (max-width: 614px){
     .sidebar {
         display: none;
