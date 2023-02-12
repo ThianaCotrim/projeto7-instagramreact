@@ -1,5 +1,23 @@
 import { useState } from "react";
 export default function RenderizarPost(props) {
+    const curtirNaFoto = () => {
+        if (heart === 'heart-outline'){
+            setHeart('heart')
+            setLikes(likes+1)
+            console.log('entrou no if')
+        } else {
+        }
+    
+       }
+       const [bookmark, setBookmark] = useState('bookmark-outline')
+       const trocarCor = () => {
+      
+       if (bookmark === 'bookmark-outline'){
+           setBookmark('bookmark')
+       } else {
+           setBookmark('bookmark-outline')
+       }
+   }
 
 
     const [likes, setLikes] = useState (Number((props.quantasCurtidas)))
@@ -15,26 +33,6 @@ export default function RenderizarPost(props) {
             setLikes(likes-1)
         }
     }
-    
-   const curtirNaFoto = () => {
-    if (heart === 'heart-outline'){
-        setHeart('heart')
-        setLikes(likes+1)
-        console.log('entrou no if')
-    } else {
-    }
-
-   }
-
-    const [bookmark, setBookmark] = useState('bookmark-outline')
-    const trocarCor = () => {
-   
-    if (bookmark === 'bookmark-outline'){
-        setBookmark('bookmark')
-    } else {
-        setBookmark('bookmark-outline')
-    }
-}
 
     return (
         <div data-test="post" class="feed">
@@ -52,7 +50,7 @@ export default function RenderizarPost(props) {
                 <div class="icones-baixo">
                     <div class="icones-baixo-esquerdo">
                         <div data-test="like-post" onClick={curtir}><ion-icon name={heart}
-                        style= {heart ? {color:'red'} : {color:'red'}}></ion-icon></div>
+                        style= {heart ? {color:'red'} : {color:'black'}}></ion-icon></div>
                         <ion-icon name="chatbubble-outline"></ion-icon>
                         <ion-icon name="paper-plane-outline"></ion-icon>
                     </div>
