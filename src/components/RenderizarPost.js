@@ -1,26 +1,43 @@
 import { useState } from "react";
 export default function RenderizarPost(props) {
-    console.log('objeto',props)
 
 
-    const [coracao, setCoracao] = useState('branco')
+    const [likes, setLikes] = useState (Number((props.quantasCurtidas)))
+    
+    const [heart, setHeart] = useState('heart-outline')
     const curtir = () => {
-        if (coracao === 'branco'){
-            setCoracao('vermelho')
+        
+        if (heart === 'heart-outline'){
+            setHeart('heart')
+            setLikes(likes+1)
         } else {
-            setCoracao('branco')
+            setHeart('heart-outline')
+            setLikes(likes-1)
         }
     }
-
-    const [escolhido, setEscolhido] = useState(undefined)
-
-    const escolher = (nome) => {
-        setEscolhido(nome);
-        console.log('Post escolhido foi', nome)
+    
+   const curtirNaFoto = () => {
+    if (heart === 'heart-outline'){
+        setHeart('heart')
+        setLikes(likes+1)
+        console.log('entrou no if')
+    } else {
     }
 
+   }
+
+    const [bookmark, setBookmark] = useState('bookmark-outline')
+    const trocarCor = () => {
+   
+    if (bookmark === 'bookmark-outline'){
+        setBookmark('bookmark')
+    } else {
+        setBookmark('bookmark-outline')
+    }
+}
+
     return (
-        <div class="feed">
+        <div data-test="post" class="feed">
             <div class="cima-feed">
                 <div class="cima-feed-esquerdo">
                     <img src={props.fotoPequena} />
@@ -30,22 +47,23 @@ export default function RenderizarPost(props) {
                     <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
                 </div>
             </div>
-            <img class="fotinha" src={props.fotoPrincipal} />
+            <img data-test="post-image" onClick={curtirNaFoto} class="fotinha" src={props.fotoPrincipal} />
             <div class="baixo-feed">
                 <div class="icones-baixo">
                     <div class="icones-baixo-esquerdo">
-                        <div onClick={curtir} class={coracao}><ion-icon name="heart-outline"></ion-icon></div>
+                        <div data-test="like-post" onClick={curtir}><ion-icon name={heart}
+                        style= {heart ? {color:'red'} : {color:'red'}}></ion-icon></div>
                         <ion-icon name="chatbubble-outline"></ion-icon>
                         <ion-icon name="paper-plane-outline"></ion-icon>
                     </div>
 
-                    <div onClick={() => escolher(props.nomePerfil)}>
-                        <ion-icon name="bookmark-outline"></ion-icon>
+                    <div >
+                        <ion-icon data-test="save-post" onClick={trocarCor} name={bookmark}></ion-icon>
                     </div>
                 </div>
                 <div class="texto-baixo">
                     <img src={props.fotoQuemCurtiu} />
-                    &nbsp; Curtido por <span>&nbsp;{props.quemCurtiu}</span>&nbsp;e outras&nbsp;<span>{props.quantasCurtidas}</span>&nbsp;pessoas
+                    &nbsp; Curtido por <span>&nbsp;{props.quemCurtiu}</span>&nbsp;e  outras&nbsp;<span data-test="likes-number">{likes }</span>&nbsp;pessoas
                 </div>
             </div>
         </div>

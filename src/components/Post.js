@@ -1,4 +1,4 @@
-import { useState } from "react"
+
 import posts from "./arrayDePosts"
 import RenderizarPost from "./RenderizarPost"
 
@@ -22,21 +22,5 @@ export default Post
 
 
 
-
- {/* <div onClick={trocarCor} class={cor}> */}
-{/* </div> */}
-
-// const [cor, setCor] = useState('branco')
-
-
-
-// const trocarCor = () => {
-   
-//     if (cor === 'branco'){
-//         setCor('preto')
-//     } else {
-//         setCor('branco')
-//     }
-// }
 
  

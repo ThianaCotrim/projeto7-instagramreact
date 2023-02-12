@@ -26,12 +26,12 @@ const Usuario = () => {
     return (
         <div class="box">
             <div class="foto-perfil">
-                <img onClick={inserirFoto} src={!novaFoto ? "./img/user.png" : novaFoto} class="pencil-outline"/>
+                <img data-test="profile-image" onClick={inserirFoto} src={!novaFoto ? "./img/user.png" : novaFoto} class="pencil-outline"/>
             </div>
                 <div class="descricao-perfil">
-                    <p class="titulo">{frase}</p>
+                    <p data-test="name" class="titulo">{frase}</p>
                 </div>
-            <ion-icon class="pencil-outline" onClick={inserirNome} name="pencil-outline"></ion-icon>
+            <ion-icon data-test="edit-name" class="pencil-outline" onClick={inserirNome} name="pencil-outline"></ion-icon>
         </div>
     )
 }

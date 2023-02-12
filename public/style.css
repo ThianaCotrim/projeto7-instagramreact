@@ -127,6 +127,7 @@ background-color: #E5E5E5;
 }
 
 .feed {
+    
     width: 614px;
     height: 749px;
     border: 1px solid #DBDBDB;
@@ -325,21 +326,14 @@ span {
     border-radius: 30px;
 }
 
+
 .cima-feed-esquerdo img {
     width: 35px;
     height: 35px;
 }
 
-.branco {
-    background-color: white;
-}
-
-.preto  {
-    background-color: black;
-}
-
-.vermelho {
-    background-color: red;
+.heart {
+    color: red
 }
 
 

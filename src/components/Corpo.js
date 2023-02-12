@@ -8,7 +8,7 @@ const Corpo = () => {
                 <div class="container">
                     <div class="stories-feed">
                         <Story />
-                        <Post />
+                        <Post/>
                     </div>
                         <Sidebar />
                 </div>
