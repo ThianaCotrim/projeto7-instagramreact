@@ -7,7 +7,7 @@ const Usuario = () => {
     const [novaFoto, setnovaFoto] = useState('')
 
 
-    let frase = !nomeDoUsuario ? "Usuário não identificado" : `Seja bem vindo(a), ${nomeDoUsuario}`;
+    let frase = !nomeDoUsuario ? "Usuário não identificado" : `${nomeDoUsuario}`;
     
 
     const inserirNome = () => {
