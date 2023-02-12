@@ -9,6 +9,7 @@ const Sugestao = () => {
         { imagem:"./img/animais.png", textoUm: "chisb.iradaderest.",textoDois:"Segue você" },
     ]
 
+
     return (
         sugestoes.map((s) => (
             <div class="seguidos">
@@ -27,5 +28,6 @@ const Sugestao = () => {
             ))
     )
 } 
+
 
 export default Sugestao
