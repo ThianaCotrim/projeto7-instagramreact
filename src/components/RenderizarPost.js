@@ -1,5 +1,8 @@
 import { useState } from "react";
 export default function RenderizarPost(props) {
+
+
+
     const curtirNaFoto = () => {
         if (heart === 'heart-outline'){
             setHeart('heart')
@@ -54,7 +57,7 @@ export default function RenderizarPost(props) {
                 </div>
             </div>
             <div >
-            <img data-test="post-image" onClick={curtirNaFoto} class="fotinha" src={props.fotoPrincipal}  />
+            <img data-test="post-image" onDoubleClick={curtirNaFoto} class="fotinha" src={props.fotoPrincipal}  />
             </div>
             <div class="baixo-feed">
                 <div class="icones-baixo">
@@ -71,7 +74,7 @@ export default function RenderizarPost(props) {
                 </div>
                 <div class="texto-baixo">
                     <img src={props.fotoQuemCurtiu} />
-                    &nbsp; Curtido por <span>&nbsp;{props.quemCurtiu}</span>&nbsp;e  outras&nbsp;<span data-test="likes-number">{likes }</span>&nbsp;pessoas
+                    &nbsp; Curtido por <span>&nbsp;{props.quemCurtiu}</span>&nbsp;e&nbsp;<span data-test="likes-number">outras&nbsp;{likes }&nbsp;pessoas</span>
                 </div>
             </div>
         </div>

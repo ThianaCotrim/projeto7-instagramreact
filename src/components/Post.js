@@ -2,10 +2,7 @@
 import posts from "./arrayDePosts"
 import RenderizarPost from "./RenderizarPost"
 
-
 const Post = () => {
-
-   
 
     return (
         posts.map((p) => (

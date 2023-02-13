@@ -8,6 +8,7 @@ font-weight: 400;
 font-family: 'Roboto', sans-serif;
 background-color: #E5E5E5;  
 }
+/* style da parte superior */
 
 .menu-superior {
     background-color: #FFFFFF;
@@ -70,6 +71,7 @@ background-color: #E5E5E5;
     align-items: center;
 }
 
+
 .principal {
     width: 100%;
     margin-top: 88px;
@@ -82,6 +84,8 @@ background-color: #E5E5E5;
     display: flex;
     justify-content: space-between;
 }
+
+/* style do stories */
 
 .stories-feed {
     display: flex;
@@ -125,6 +129,8 @@ background-color: #E5E5E5;
     justify-content: center;
     align-items: center;
 }
+
+/* style do feed */
 
 .feed {
     
@@ -194,6 +200,13 @@ span {
     width: 20px;
     height: 20px;
 }
+
+.cima-feed-esquerdo img {
+    width: 35px;
+    height: 35px;
+}
+
+/* style do sidebar */
 
 .sidebar {
     background-color: #E5E5E5;  
@@ -326,16 +339,6 @@ span {
     width: 60px;
     height: 60px;
     border-radius: 30px;
-}
-
-
-.cima-feed-esquerdo img {
-    width: 35px;
-    height: 35px;
-}
-
-.heart {
-    color: red
 }
 
 
