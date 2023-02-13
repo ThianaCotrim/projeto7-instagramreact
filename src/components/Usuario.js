@@ -3,25 +3,19 @@ import { useState } from "react";
 const Usuario = () => {
 
     const [nomeDoUsuario, setnomeDoUsuario] = useState('')
-
     const [novaFoto, setnovaFoto] = useState('')
-
 
     let frase = !nomeDoUsuario ? "Usuário não identificado" : `${nomeDoUsuario}`;
     
-
     const inserirNome = () => {
         const novoNomeDoUsuario = prompt('Qual o seu nome?')
         setnomeDoUsuario(novoNomeDoUsuario)
-        
     }
 
     const inserirFoto = () => {
         const fotoAtualizada = prompt('Insira sua foto de perfil')
         setnovaFoto(fotoAtualizada)
-        
     }
-
 
     return (
         <div class="box">

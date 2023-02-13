@@ -1,6 +1,5 @@
 export default function RenderizarSugestoes (props){
 
-
     return (
         <div class="seguidos">
         <div class="seguidor-individual">

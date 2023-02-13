@@ -1,6 +1,11 @@
 import { useState } from "react";
-export default function RenderizarPost(props) {
 
+const RenderizarPost = (props) => {
+
+    const [bookmark, setBookmark] = useState('bookmark-outline')
+    const [likes, setLikes] = useState (Number((props.quantasCurtidas)))
+    const [heart, setHeart] = useState('heart-outline')
+    const [cor, setCor] = useState (false)
 
 
     const curtirNaFoto = () => {
@@ -9,26 +14,18 @@ export default function RenderizarPost(props) {
             setLikes(likes+1)
             setCor(true)
         } else {
-          
         }
-    
-       }
-       const [bookmark, setBookmark] = useState('bookmark-outline')
-       const trocarCor = () => {
-      
+    }
+       
+    const trocarCor = () => {
        if (bookmark === 'bookmark-outline'){
            setBookmark('bookmark')
        } else {
            setBookmark('bookmark-outline')
        }
-   }
-
-
-    const [likes, setLikes] = useState (Number((props.quantasCurtidas)))
+    }
     
-    const [heart, setHeart] = useState('heart-outline')
     const curtir = () => {
-        
         if (heart === 'heart-outline'){
             setHeart('heart')
             setLikes(likes+1)
@@ -40,11 +37,7 @@ export default function RenderizarPost(props) {
            
         }
     }
-
-    const [cor, setCor] = useState (false)
     
-      
-
     return (
         <div data-test="post" class="feed">
             <div class="cima-feed">
@@ -80,3 +73,5 @@ export default function RenderizarPost(props) {
         </div>
     )
 }
+
+export default RenderizarPost
