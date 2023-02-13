@@ -4,8 +4,9 @@ export default function RenderizarPost(props) {
         if (heart === 'heart-outline'){
             setHeart('heart')
             setLikes(likes+1)
-            console.log('entrou no if')
+            setCor(true)
         } else {
+          
         }
     
        }
