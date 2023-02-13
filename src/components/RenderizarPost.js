@@ -28,11 +28,18 @@ export default function RenderizarPost(props) {
         if (heart === 'heart-outline'){
             setHeart('heart')
             setLikes(likes+1)
+            setCor(true)
         } else {
             setHeart('heart-outline')
             setLikes(likes-1)
+            setCor(false)
+           
         }
     }
+
+    const [cor, setCor] = useState (false)
+    
+      
 
     return (
         <div data-test="post" class="feed">
@@ -45,12 +52,14 @@ export default function RenderizarPost(props) {
                     <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
                 </div>
             </div>
-            <img data-test="post-image" onClick={curtirNaFoto} class="fotinha" src={props.fotoPrincipal} />
+            <div >
+            <img data-test="post-image" onClick={curtirNaFoto} class="fotinha" src={props.fotoPrincipal}  />
+            </div>
             <div class="baixo-feed">
                 <div class="icones-baixo">
                     <div class="icones-baixo-esquerdo">
-                        <div data-test="like-post" onClick={curtir}><ion-icon name={heart}
-                        style= {heart ? {color:'red'} : {color:'black'}}></ion-icon></div>
+                        <div style={cor ? { color: "red" } : { color: "black" }} data-test="like-post" onClick={curtir}><ion-icon name={heart}
+                      ></ion-icon></div>
                         <ion-icon name="chatbubble-outline"></ion-icon>
                         <ion-icon name="paper-plane-outline"></ion-icon>
                     </div>
